@@ -356,8 +356,8 @@ a.custom-nav-link:hover {
 }
 
 .social-icons {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     transition: all .5s ease;
 }
 
@@ -444,7 +444,7 @@ footer {
 }
 
 .box h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 2rem;
@@ -469,7 +469,7 @@ footer {
 }
 
 .footer-location ul {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer-location ul li {
@@ -479,12 +479,12 @@ footer {
 .social-icons {
     margin: 2rem 0 0 0;
     padding: 4px;
-    height: 40px;
+    height: 30px;
 }
 
 img.social-icons {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     margin: 0 6px;
     line-height: 14px;
 }
