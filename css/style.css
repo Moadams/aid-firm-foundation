@@ -10,7 +10,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     box-sizing: border-box;
 }
 
@@ -115,7 +115,6 @@ nav {
     font-size: 1.6rem;
     text-transform: uppercase;
     color: rgb(233, 231, 231);
-    font-weight: bold;
 }
 
 a.custom-nav-link:hover {
@@ -161,7 +160,7 @@ a.custom-nav-link:hover {
 .opening-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .main-message {
@@ -177,6 +176,7 @@ a.custom-nav-link:hover {
 }
 
 .main-message p {
+    font-weight: 100;
     text-transform: capitalize;
     letter-spacing: .5px;
 }
@@ -274,7 +274,7 @@ a.custom-nav-link:hover {
 }
 
 .heading {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3rem;
@@ -296,7 +296,8 @@ a.custom-nav-link:hover {
 
 .card-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
 }
@@ -360,10 +361,8 @@ a.custom-nav-link:hover {
     transition: all .5s ease;
 }
 
-.social-icons:hover {
-    height: 26px;
-    width: 26px;
-}
+
+/* Subscribe to our news letter */
 
 .subscribe {
     background: rgba(238, 238, 238, 1);
@@ -416,9 +415,12 @@ input#client-email:focus {
     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.5);
 }
 
+
+/* Footer section */
+
 footer {
-    background-color: #F1654E;
-    padding: 6rem 0 0;
+    background-color: #252525;
+    color: rgb(156, 152, 152);
 }
 
 .footer {
@@ -446,7 +448,7 @@ footer {
     text-transform: uppercase;
     font-weight: 800;
     margin-bottom: 2rem;
-    border-bottom: .5px solid rgb(162, 162, 185);
+    border-bottom: .1px solid rgb(162, 162, 185);
     padding-bottom: 5px;
 }
 
@@ -460,12 +462,6 @@ footer {
     bottom: -.5rem;
     left: 0;
 } */
-
-.copyright {
-    background-color: #d3290f;
-    padding: 2rem 0;
-    text-align: center;
-}
 
 .box .content p {
     text-align: justify;
@@ -491,6 +487,14 @@ img.social-icons {
     width: 4rem;
     margin: 0 6px;
     line-height: 14px;
+}
+
+.copyright {
+    background-color: #000000;
+    padding: 2rem 0;
+    text-align: center;
+    color: rgb(156, 152, 152);
+    font-family: 'Caveat', cursive;
 }
 
 
@@ -529,6 +533,15 @@ img.social-icons {
     .nav-brand {
         width: 3rem;
     }
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 2rem;
+    }
     .main-content h2 {
         font-size: 1.5rem;
     }
@@ -546,6 +559,22 @@ img.social-icons {
     }
     .main-container {
         padding: 0 2rem;
+    }
+    #about-header-p {
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        margin: 2rem;
     }
 }
 
@@ -583,17 +612,7 @@ img.social-icons {
     }
 }
 
-@media screen and (min-width: 768px) {
-    .card-wrapper {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .card {
-        margin: 2rem;
-    }
-}
+@media screen and (min-width: 768px) {}
 
 .nav-active {
     transform: translateX(0%);
